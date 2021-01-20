@@ -18,6 +18,10 @@ def make_simple_latte
   puts "3. 신나게 섞는다."
 end
 
+# make_simple_latte
 make_simple_latte
+# make_blueberry_smoothie
 make_blueberry_smoothie
+# make_dolcelatte
+make_dolcelatte
 make_dolcelatte
