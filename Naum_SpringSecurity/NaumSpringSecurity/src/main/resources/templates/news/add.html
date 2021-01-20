@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>
+		뉴스 추가
+		</title>
+		<meta charset="utf-8"> 
+	</head>
+	<img src = "https://img.etoday.co.kr/pto_db/2010/02/20100201052912_sysy_1.jpg" width="400" height="300">
+	<br>
+	
+	<body style="text-align: center">
+	
+	    <form th:action="@{/news/add}" th:object="${newsArticle}"  method="post">    <!-- th달면 타임리프용 포멧 링크거는것 -->
+    	 <input type="hidden" th:field="*{id}"><br><br>
+    	 <label>뉴스 제목:</label>
+    	 <input type="text" th:field="*{title}"><br><br>
+  		 <label >뉴스 카테고리:</label>
+ 		 <select th:field="*{category}">
+ 		 		<option value="과학">과학</option>
+ 		 		<option value="미용">미용</option>
+ 		 		<option value="생활">생활</option>
+ 		 		<option value="의료">의료</option>
+ 		 </select>
+ 		 <br>
+  		 <label>뉴스 내용:</label>
+    	 <input type="text" th:field="*{contents}"><br><br>
+    	 <label>뉴스 작성자</label>
+    	 <input type="text" th:field="*{author}" readonly><br><br>\
+  		 <input type="submit" value="뉴스 저장"> <!-- submit 누르면 폼에 설정된 add로 날려준다. -->
+</form>
+<img src = "https://lh3.googleusercontent.com/-AKEprTffJ90/WnnAW_VF5eI/AAAAAAAAJQQ/G24Z87m_kZM089t2q1xhUNnHpuz036YjgCHMYCw/s0/f5f5e59ef5ef21276c41b12ec054e3474d472535.jpg" width="400" height="300">
+	 </body>
+</html>

@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>
+		제목
+		</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+<!-- 이게 주석입니다. -->
+	<a href="student">   </a>
+	<a href="a">   </a>
+	<a href="javascript:history.back();">   </a>
+	
+		<label th:text="${msg}"></label>
+		<table style="border: 4px solid #444444;">
+			<thead>
+				<tr style="border: 4px solid #444444;">
+					<th style="border: 4px solid #444444;">  </th>
+					<th style="border: 4px solid #444444;">  </th>
+					<th style="border: 4px solid #444444;">  </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="border: 4px solid #444444;" th:each=	"item : ${studentList}">
+					<td style="border: 4px solid #444444;" th:text="${item.studentId}"></td>
+					<td style="border: 4px solid #444444;" th:text="${item.studentName}"></td>
+					<td style="border: 4px solid #444444;" th:text="${item.majorId}"></td>
+				</tr>	
+			</tbody>	
+		</table>
+	</body>
+</html>

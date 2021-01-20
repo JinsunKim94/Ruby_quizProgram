@@ -1,0 +1,54 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>
+		뉴스 클릭하면 나오는 창
+		</title>
+		<meta charset="utf-8"> 
+	</head>
+	<body style="text-align: center">
+	    <a href="/news"><img src="/img/매력.gif" alt="My Image" width="200" height="200"></a>
+	<label th:text="${msgName}"></label>
+	<div th:if = "${newsArticle != null}">
+			제목 : <label style ="border: 1px solid #444444;" th:text= "${newsArticle.title}"></label>
+			<br>
+			카테고리 : <label style ="border: 1px solid #444444;" th:text= "${newsArticle.category}"></label>
+			<br>
+			내용 : <label style ="border: 1px solid #444444;" th:text= "${newsArticle.contents}"></label>
+			<br>
+			작성자 : <label style ="border: 1px solid #444444;" th:text= "${newsArticle.author}"></label>
+						<table style="border: 2px solid #00FF00; width: 60%; height: 100px; margin : auto; text-align: center">
+				<thead>
+					<tr style="border: 1px solid #FF0000;">
+						<th style="border: 1px solid #FF0000;">ID</th>
+					    <th style="border: 1px solid #FF0000;">내용</th>
+						<th style="border: 1px solid #FF0000;">작성자</th>
+						<th style="border: 1px solid #FF0000;">댓글 수정</th>
+						<th style="border: 1px solid #FF0000;">댓글 삭제</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr style = "border: 1px solid #444444;" th:each="item : ${newsArticle.replies}">
+						<td style = "border: 1px solid #444444;" th:text="${item.id}"></td>
+						<td style = "border: 1px solid #444444;" th:text="${item.contents}"></td>
+						<td style = "border: 1px solid #444444;" th:text="${item.createdBy}"></td>
+						<td style="border: 2px solid rgb(255, 0, 128);"><a th:href = "@{'/news/reply/modify?newsArticleId=' + ${newsArticle.id} + '&idx='+${item.id}}" th:text="${item.userId}"></a></td>
+						<td style="border: 2px solid rgb(255, 0, 128);"><a th:href = "@{'/news/reply/delete?idx='+${item.id}}" th:text="${item.userId}"></a></td>
+						
+				</tbody>	
+			</table>
+			<form th:action="@{/news/reply/add}" th:object="${newsReply}" method="post">
+			 <input type = "hidden" name = "newsArticleId" th:value=${newsArticle.id}><br><br>
+  			 <input type="hidden" th:field="*{id}">
+  			 <input type="text" th:field="*{userId}"> :
+  			 <input type="text" th:field="*{contents}">
+  			 <input type="submit" value="Submit"><br><br>
+  			 </form>
+			</div>
+			<div th:unless = "${newsArticle != null}">
+			해당 뉴스가 없습니다.
+			</div>
+			<a th:href="@{'/news/modify?idx='+${newsArticle.id}}">기사 수정</a>
+			<a th:href="@{'/news/delete?idx='+${newsArticle.id}}">기사 삭제</a>
+		</body>
+</html>

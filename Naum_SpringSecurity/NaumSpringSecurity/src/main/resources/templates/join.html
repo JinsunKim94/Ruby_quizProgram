@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns:th="http://www.w3.org/1999/xhtml"
+	xmlns:sec="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+		회원가입
+		</title>
+		<meta charset="UTF-8">
+	</head>
+	<body background="/img/북극곰.jpg">
+	<font size="7em" color="white">
+	탈모의 답은 바로 이곳에 있다!!
+	</font>
+	   <form th:action="@{/user/join}" th:object="${user}" method="post">
+			<label color="white">아이디</label>
+			<input type="text" th:field="*{userId}"><br></br>
+			<label>비밀번호</label>
+			<input type="password" th:field="*{password}"><br></br>
+			<label>닉네임</label>
+			<input type="text" th:field="*{userName}"><br></br>
+			<label>이메일</label>
+			<input type="text" th:field="*{email}"><br></br>
+			<input type="submit" value="회원정보저장">
+		</form>
+	</body>
+</html>

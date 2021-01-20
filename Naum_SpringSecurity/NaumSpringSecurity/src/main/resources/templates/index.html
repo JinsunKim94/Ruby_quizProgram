@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th="http://www.w3.org/1999/xhtml"
+xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="UTF-8">
+		<title>메인 페이지</title>
+</head>
+<body background="/img/배경2.jpg">
+</body>
+<h1>탈모는 불치병이 아닙니다!!</h1>
+<hr>
+		<a sec:authorize="isAnonymous()"
+   		   th:href="@{/user/login}">로그인</a>
+  		<a sec:authorize="isAuthenticated()"
+   		   th:href="@{/user/logout}">로그아웃</a>
+  		<a sec:authorize="isAnonymous()"
+   		   th:href="@{/user/join}">회원가입</a>
+  		<a sec:authorize="hasRole('ROLE_USER')"
+   		   th:href="@{/user/myinfo}">내 정보</a>
+ 		<a sec:authorize="hasRole('ROLE_SELLER')"
+   		   th:href="@{/product/seller}">판매자</a>
+  		<a sec:authorize="hasRole('ROLE_ADMIN')"
+  		   th:href="@{/user/admin}">관리자</a>
+  		   <span sec:authentication="name">
+  		   </span>
+</body>
+</html>
+
