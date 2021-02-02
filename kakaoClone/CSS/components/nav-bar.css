@@ -16,6 +16,12 @@
 .nav__link{
   position: relative;
   color: #2e363e;
+  transition: .4s;
+  transition-timing-function: ease-out;
+}
+
+.nav__link:hover{
+  color: aquamarine;
 }
 
 .nav__notification{

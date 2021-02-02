@@ -21,3 +21,21 @@
 .screen-header__icons span:hover{
   color: aquamarine;
 }
+
+.screen-header__icons{
+  position: relative;
+}
+.screen-header__fa-cog{
+  background-color: aquamarine;
+  color: aquamarine;
+  font-size: 1px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  bottom: 1px;
+  right: -3px;
+}
