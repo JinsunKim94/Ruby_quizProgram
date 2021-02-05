@@ -42,3 +42,56 @@ font-size: 35px;
   font-size: 20px;
   color: var(--border-color);
 }
+
+.open-chat__header{
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.open-chat__header span{
+  opacity: 0.6;
+}
+
+.open-post{
+  display: flex;
+}
+
+.open-post__title{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.open-post__hashtags{
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.open-post__members{
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__member-count{
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.open-post__members .divider{
+  width: 1px;
+  height: 15px;
+  margin: o 5px;
+  background-color: white;
+}
+
+.open-post__member-status{
+  color: pink;
+}
