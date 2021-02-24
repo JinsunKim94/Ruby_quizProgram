@@ -1,0 +1,57 @@
+.menubar__picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+}
+.picture__store{
+    width: 140px;
+    height: 150px;
+    margin: 25px 20px;
+}
+
+.picture__shirt{
+    width: 90px;
+    height: 90px;
+    margin: 15px 35px;
+}
+
+.picture__pants{
+    width: 100px;
+    height: 90px;
+    margin: 15px 35px;
+}
+
+.picture__skirt{
+    width: 80px;
+    height: 90px;
+    margin: 15px 35px;
+}
+
+.picture__blue{
+    font-size: 40px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: aquamarine;
+    border-radius: 20px;
+    margin: 15px 35px;
+}
+
+.picture__yellow{
+    font-size: 40px;
+    border: 1px solid yellow;
+    background-color: yellow;
+    color: darkorange;
+    border-radius: 20px;
+    margin: 15px 35px;
+}
+
+.picture__pink{
+    font-size: 40px;
+    border: 1px solid pink;
+    background-color: pink;
+    color: blueviolet;
+    border-radius: 20px;
+    margin: 15px 35px;
+}

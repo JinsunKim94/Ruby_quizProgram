@@ -11,5 +11,3 @@ function helloWorld(){
 if(hello){
     hello.addEventListener("click", helloWorld);
 }
-
-console.log(helloWorld);
