@@ -1,2 +1,2 @@
 # StudyingProjects
-It is not my Projects...just Clone Coding😅
+It is not my Projects...just Clone Coding
