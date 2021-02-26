@@ -1,0 +1,90 @@
+.menubar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.btn__store{
+    cursor: pointer;
+    transition: transform 300ms ease;
+    width: 140px;
+    height: 150px;
+    margin: 25px 20px;
+}
+.btn__store:hover{
+    transform: scale(1.1);
+}
+
+.btn__shirt{
+    transition: transform 300ms ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 90px;
+    height: 90px;
+    margin: 15px 35px;
+}
+
+.btn__pants{
+    transition: transform 300ms ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 100px;
+    height: 90px;
+    margin: 15px 35px;
+}
+
+.btn__skirt{
+    transition: transform 300ms ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 80px;
+    height: 90px;
+    margin: 15px 35px;
+}
+
+.btn__blue{
+    transition: transform 300ms ease;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: coral;
+    color: aquamarine;
+    border-radius: 20px;
+    margin: 15px 35px;
+}
+
+.btn__yellow{
+    transition: transform 300ms ease;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: burlywood;
+    color: darkorange;
+    border-radius: 20px;
+    right: 0;
+}
+
+.btn__pink{
+    transition: transform 300ms ease;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: bisque;
+    color: blueviolet;
+    border-radius: 20px;
+    margin: 15px 35px;
+}
+.btn__shirt:hover, .btn__skirt:hover, .btn__pants:hover,
+.btn__blue:hover, .btn__yellow:hover, .btn__pink:hover{
+    transform: scale(1.1);
+}

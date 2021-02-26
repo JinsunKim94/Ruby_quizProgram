@@ -1,8 +1,14 @@
 @import 'reset.css';
-@import 'picture.css';
+@import 'button.css';
+@import 'products.css';
 
 body{
     background-color: #18181b;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 header{
     text-align: center;
@@ -26,15 +32,4 @@ header{
 .copyright a:hover { 
     color: cornsilk; text-decoration: underline;
 }
-.menubar__products{
-    align-content: center;
-}
-.product__name{
-    font-size: 20px;
-    border:1px solid white;
-    background-color: grey;
-}
-.button__shirt,.button__skirt,.button__pants{
-    background-color: #18181b;
-    border: none;
-}
+
