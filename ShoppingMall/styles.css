@@ -34,3 +34,7 @@ header{
     border:1px solid white;
     background-color: grey;
 }
+.button__shirt,.button__skirt,.button__pants{
+    background-color: #18181b;
+    border: none;
+}
