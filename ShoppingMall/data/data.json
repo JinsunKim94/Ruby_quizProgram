@@ -1,0 +1,16 @@
+{
+    "items": [
+        {"type": "skirt",
+         "gender": "female",
+         "size": "large",
+         "color": "blue",
+         "image": "images/skirt.png"
+        },
+        {"type": "tshirt",
+            "gender": "male",
+            "size": "large",
+            "color": "blue",
+            "image": "images/shirt.png"
+           }
+    ]
+}

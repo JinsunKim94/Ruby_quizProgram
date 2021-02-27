@@ -4,6 +4,8 @@
     list-style: none;
     padding-left: 0;
     overflow-y: scroll;
+    overflow: hidden;
+    
 }
 .products__list{
     background-color: white;
@@ -18,5 +20,5 @@
 }
 .products__info{
     font-size: 30px;
-    color: bisque;
+    color: black;
 }
