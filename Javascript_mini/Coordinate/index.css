@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.normal{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.abnormal{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
