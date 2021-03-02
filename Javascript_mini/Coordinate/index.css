@@ -3,12 +3,14 @@ body{
     flex-direction: column;
 }
 .normal{
-    width: 100px;
-    height: 100px;
-    background-color: green;
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+    background-color: coral;
 }
 .abnormal{
-    width: 100px;
-    height: 100px;
-    background-color: yellowgreen;
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+    background-color: cornflowerblue;
 }
