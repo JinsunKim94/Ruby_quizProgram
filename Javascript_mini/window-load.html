@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window-load</title>
+    <script src="test.js" defer></script>
+  </head>
+  <body>
+    <script>
+      //only document
+      window.addEventListener("DOMContentLoaded", () => {
+        console.log("DOMContentLoaded"); //HTML만 완료되면 호출
+      });
+      //defer옵션일 경우에는 모두 파싱한 뒤에 contentLoaded가 호출이 되고 그 다음에 페이지에서 쓰여지는 이미지, css가 다 다운로드 되고 나서 load가 호출됨.
+
+      //after resource (css, images)가 다 다운로드 되면 호출
+      window.addEventListener("load", () => {
+        console.log("load");
+      });
+      //bofore unload
+      window.addEventListener("beforeunload", () => {
+        console.log("beforeunload");
+      });
+      //resource is being unloaded
+      window.addEventListener("unload", () => {
+        console.log("unload");
+      });
+    </script>
+  </body>
+</html>
