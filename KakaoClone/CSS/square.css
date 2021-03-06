@@ -1,0 +1,37 @@
+body{
+    background-color: tomato;
+  }
+  .square__outer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 230px;
+    background-color: #f5deb3;
+    border: 2px solid black; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+  }
+  .square__child1{
+    border: 3px solid white;
+    width: 47px;
+    height: 47px;
+    background-color: darkcyan;
+    margin-top: 5px;
+  }
+  .square__child2{
+    border: 3px dashed white; 
+    width: 187px;
+    height: 47px;
+    background-color: darkcyan;
+  }
+  .square__child3{
+    border: 3px solid white;
+    width: 47px;
+    height: 47px;
+    background-color: darkcyan;
+    margin-bottom: 5px;
+  }
