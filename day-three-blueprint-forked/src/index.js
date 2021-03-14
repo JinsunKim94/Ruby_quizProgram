@@ -12,15 +12,15 @@ const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 ✅ DO NOT CHANGE .css, or .html files.
 ✅ ALL function handlers should be INSIDE of "superEventHandler"
 */
-const superEventHandler = {};
-const hello = document.querySelector('h2');
+const hello = document.getElementsByTagName('h2');
 
-function changeTitle( ){
+function changeTitle(){
   hello.innerHTML = 'Mouseenter Title!';
-}
-
-function mouseEnter( ){
   hello.addEventListener('mouseenter', changeTitle);
 }
 
-mouseEnter();
+
+
+const superEventHandler = {
+  changeTitle();
+};
